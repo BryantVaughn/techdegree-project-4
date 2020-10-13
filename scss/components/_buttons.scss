@@ -3,31 +3,28 @@
 /* ============================================= */
 
 .btn {
+  @include btn-layout($brdr: none);
   margin-top: 15px;
-  width: 100%;
   color: $white;
-  border: none;
-  padding: 10px 0;
   text-transform: uppercase;
-  border-radius: 5px;
 }
 
 .default {
-  background-color: $color-accent;
+  @include btn-color($color-accent);
 }
 
 .error {
-  background-color: $color-error;
+  @include btn-color($color-error);
 }
 
 .info {
-  background-color: $color-info;
+  @include btn-color($color-info);
 }
 
 .success {
-  background-color: $color-success;
+  @include btn-color($color-success);
 }
 
 .warning {
-  background-color: $color-warning;
+  @include btn-color($color-warning);
 }

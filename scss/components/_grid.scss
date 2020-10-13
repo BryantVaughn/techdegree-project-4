@@ -20,6 +20,12 @@
   border-radius: 5px;
 }
 
+// @for $i from 1 through 12 {
+//   .theme.col-#{$i} {
+//     background-color: change-hue($color-error, $i);
+//   }
+// }
+
 .theme.col-1 {
   background-color: $color-info;
 }

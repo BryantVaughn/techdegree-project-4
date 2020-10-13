@@ -1,10 +1,36 @@
-@mixin img-config($margin-top: null,
-                  $max-width: null,
-                  $max-height: null) {
+/* ============================================= */
+/*                  Mixins                       */
+/* ============================================= */
+
+@mixin centered {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@mixin img-config($margin-top: null,
+                  $max-width: null,
+                  $max-height: null) {
   margin-top: $margin-top;
   max-width: $max-width;
   max-height: $max-height;
+}
+
+@mixin btn-layout($width: 100%,
+                  $brdr-rad: $btn-radius,
+                  $pad: 10px 0,
+                  $brdr: null) {
+  width: $width;
+  border-radius: $btn-radius;
+  padding: $pad;
+  border: $brdr;
+}
+
+@mixin btn-color($color, $amt: 20%) {
+  background-color: $color;
+  transition: background-color 0.3s ease-out;
+
+  &:hover {
+    background-color: lighten($color, $amt);
+  }
 }

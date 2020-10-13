@@ -2,3 +2,7 @@
   $long-val: ($units / $total-units) * 100%;
   @return round($long-val * 100) / 100;
 }
+
+@function change-hue($color, $multiplier, $units: 15deg) {
+  @return adjust-hue($color, ($multiplier * $units));
+}
