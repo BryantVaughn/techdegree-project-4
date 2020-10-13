@@ -2,18 +2,18 @@
 /*              Images                           */
 /* ============================================= */
 
-.img-avatar {
-  @include centered;
-  @include img-config(10px, 100%, 100%);
-}
-
-.img-frame {
-  @include centered;
-  @include img-config(10px, 100%);
-  padding: 13px;
-  border: 1px solid #ccc;
-}
-
-.img-logo {
-  @include centered;
+.img {
+  &-avatar {
+    @include centered;
+    @include img-config(10px, 100%, 100%);
+  }
+  &-frame {
+    @include centered;
+    @include img-config(10px, 100%);
+    padding: 13px;
+    border: 1px solid #ccc;
+  }
+  &-logo {
+    @include centered;
+  }
 }

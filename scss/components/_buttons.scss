@@ -10,21 +10,21 @@
 }
 
 .default {
-  @include btn-color($color-accent);
+  @include btn-styles($color-accent);
 }
 
 .error {
-  @include btn-color($color-error);
+  @include btn-styles($color-error);
 }
 
 .info {
-  @include btn-color($color-info);
+  @include btn-styles($color-info);
 }
 
 .success {
-  @include btn-color($color-success);
+  @include btn-styles($color-success);
 }
 
 .warning {
-  @include btn-color($color-warning);
+  @include btn-styles($color-warning);
 }

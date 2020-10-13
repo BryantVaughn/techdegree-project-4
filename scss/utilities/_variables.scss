@@ -13,6 +13,22 @@ $color-info: #927bc1;
 $color-success: #63cc82;
 $color-warning: #fd7856;
 
+// Columns Color Map
+$col-colors: (
+  '1': $color-info,
+  '2': $color-warning,
+  '3': #a28ff1,
+  '4': #6adbfd,
+  '5': #68d751,
+  '6': #40b1f3,
+  '7': #ff8381,
+  '8': #f69c78,
+  '9': $color-error,
+  '10': $color-success,
+  '11': $color-accent,
+  '12': #4edeb9,
+);
+
 // Button radius
 $btn-radius: 5px;
 

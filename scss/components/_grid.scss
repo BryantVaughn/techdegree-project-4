@@ -17,61 +17,13 @@
   flex-basis: 100%;
   min-height: 25px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: $btn-radius;
 }
 
-// @for $i from 1 through 12 {
-//   .theme.col-#{$i} {
-//     background-color: change-hue($color-error, $i);
-//   }
-// }
-
-.theme.col-1 {
-  background-color: $color-info;
-}
-
-.theme.col-2 {
-  background-color: $color-warning;
-}
-
-.theme.col-3 {
-  background-color: lighten($color-info, 10%);
-}
-
-.theme.col-4 {
-  background-color: lighten($color-accent, 10%);
-}
-
-.theme.col-5 {
-  background-color: lighten($color-success, 10%);
-}
-
-.theme.col-6 {
-  background-color: adjust-hue($color-accent, 20deg);
-}
-
-.theme.col-7 {
-  background-color: lighten($color-error, 10%);
-}
-
-.theme.col-8 {
-  background-color: lighten($color-warning, 10%);
-}
-
-.theme.col-9 {
-  background-color: $color-error;
-}
-
-.theme.col-10 {
-  background-color: $color-success;
-}
-
-.theme.col-11 {
-  background-color: $color-accent;
-}
-
-.theme.col-12 {
-  background-color: lighten($color-primary, 10%);
+@for $i from 1 through 12 {
+  .theme.col-#{$i} {
+    background-color: get-color($i);
+  }
 }
 
 .card {

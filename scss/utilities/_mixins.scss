@@ -26,8 +26,10 @@
   border: $brdr;
 }
 
-@mixin btn-color($color, $amt: 20%) {
+@mixin btn-styles($color, $amt: 12%) {
   background-color: $color;
+  outline: none;
+  cursor: pointer;
   transition: background-color 0.3s ease-out;
 
   &:hover {
