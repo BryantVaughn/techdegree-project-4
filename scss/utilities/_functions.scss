@@ -1,0 +1,4 @@
+@function flex-col-pct($units, $total-units: 12) {
+  $long-val: ($units / $total-units) * 100%;
+  @return round($long-val * 100) / 100;
+}
