@@ -1,0 +1,10 @@
+@mixin img-config($margin-top: null,
+                  $max-width: null,
+                  $max-height: null) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $margin-top;
+  max-width: $max-width;
+  max-height: $max-height;
+}
